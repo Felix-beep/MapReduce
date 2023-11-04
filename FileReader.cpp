@@ -16,7 +16,7 @@ using SingleLineChapter = Line;
 using Book = vector<Chapter>;
 
 struct ChapterEvaluation {
-    const Chapter chapter;
+    const Chapter& chapter;
     const vector<int> peaceTerms;
     const vector<int> warTerms;
     const bool isWarChapter;
@@ -197,7 +197,7 @@ auto Filter = [](const string& Word, const map<string, int>& PeaceTerms, const m
 auto FilterChapter = [](const Chapter& Chapter, const map<string, int>& PeaceTerms, const map<string, int>& WarTerms ) -> pair<vector<int>, vector<int>> {
     vector<int> PeaceDistances = { };
     vector<int> WarDistances = { };
-    int iterator = 0;
+    /*int iterator = 0;
 
     auto evaluateWord = [&](Word word){
         optional<int> Result = Filter(word, PeaceTerms, WarTerms);
@@ -215,7 +215,7 @@ auto FilterChapter = [](const Chapter& Chapter, const map<string, int>& PeaceTer
     };
 
     for_each(Chapter.begin(), Chapter.end(), evaluateLine);
-
+    */
     return make_pair(PeaceDistances, WarDistances);
 };
 
