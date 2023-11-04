@@ -250,13 +250,13 @@ auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMa
 };
 
 auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMapping, const map<string, int>& WarMapping ) -> vector<ChapterEvaluation> {
-    //mutex mtx;
+    mutex mtx;
     bool skipFirst = true;
     vector<ChapterEvaluation> EvaluatedChapters = {};
-    //int i = 0;
+    int i = 0;
 
     // Create a vector of threads
-    //vector<thread> activethreads = {};
+    vector<thread> activethreads = {};
 
     for(Chapter Chapter : Book){
         // To Do: create a view of the Book, and then just drop(1)
@@ -265,22 +265,20 @@ auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMap
             continue;
         }
 
-        auto result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
-        EvaluatedChapters.emplace_back(result);
         
-        /*activethreads.emplace_back([&]() {
+        activethreads.emplace_back([&]() {
             std::lock_guard<std::mutex> lock(mtx);
             int Threadnumber = i++;
             cout << "Thread number " << Threadnumber << endl;
             auto result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
-            //EvaluatedChapters.emplace_back(result);
+            EvaluatedChapters.emplace_back(result);
             cout << "Thread number " << Threadnumber << " finished" <<endl;
-        });*/
+        });
     }
 
-    /*for (auto& thread : activethreads) {
+    for (auto& thread : activethreads) {
         thread.join();
-    }*/
+    }
 
     return EvaluatedChapters;
 };
