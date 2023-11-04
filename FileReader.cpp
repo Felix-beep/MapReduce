@@ -83,7 +83,6 @@ auto WriteAnalyzedBook = [](const vector<ChapterEvaluation>& EvaluatedChapter, b
     for_each(EvaluatedChapter.begin(), EvaluatedChapter.end(), [&](const ChapterEvaluation& Chapter){
         WriteAnalyzedChapter(Chapter, num, printText, (num > 1));
         ++num;
-        cout << num << endl;
     });
 };
 
@@ -189,8 +188,8 @@ auto MapVector = [](const vector<string> Vector) -> map<string, int> {
 };
 
 auto Filter = [](const string& Word, const map<string, int>& PeaceTerms, const map<string, int>& WarTerms) -> optional<int> {
-    //if(PeaceTerms.find(Word) != PeaceTerms.end()) return 0;
-    //if(WarTerms.find(Word) != WarTerms.end()) return 1;
+    if(PeaceTerms.find(Word) != PeaceTerms.end()) return 0;
+    if(WarTerms.find(Word) != WarTerms.end()) return 1;
     return nullopt;
 };
 
@@ -199,7 +198,7 @@ auto FilterChapter = [](const Chapter& Chapter, const map<string, int>& PeaceTer
     vector<int> WarDistances = { };
     int iterator = 0;
 
-    cout << Chapter.size() << endl;
+    cout << "Chapter Size while Filtering: " << Chapter.size() << endl;
     auto evaluateWord = [&](Word word){
         optional<int> Result = Filter(word, PeaceTerms, WarTerms);
         if(Result.has_value()){
@@ -259,23 +258,23 @@ auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMap
     // Create a vector of threads
     vector<thread> activethreads = {};
 
-    for(Chapter Chapter : Book){
+    // To Do: make it so this 
+    for_each(Book.begin(), Book.end(), [&](Chapter Chapter){
         // To Do: create a view of the Book, and then just drop(1)
         if(skipFirst){
             skipFirst = false;
-            continue;
-        }
-
-        
-        activethreads.emplace_back([&]() {
-            std::lock_guard<std::mutex> lock(mtx);
-            int Threadnumber = i++;
-            cout << "Thread number " << Threadnumber << endl;
-            auto result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
+        }else {
+            activethreads.emplace_back([&]() {
+            int Threadnumber = ++i;
+            cout << "Thread number " << Threadnumber << " started" << endl;
+            cout << "Chapter Size at the beginning: " << Chapter.size() << endl;
+            auto result = EvaluateChapter(Book[Threadnumber], PeaceMapping, WarMapping);
+            lock_guard<mutex> lock(mtx);
             EvaluatedChapters.emplace_back(result);
             cout << "Thread number " << Threadnumber << " finished" <<endl;
-        });
-    }
+            });
+        }
+    });
 
     for (auto& thread : activethreads) {
         thread.join();

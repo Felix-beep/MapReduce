@@ -1,1460 +1,1460 @@
 Evaluation for Chapter 1:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 2:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 3:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 4:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 5:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 6:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 7:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 9 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 8:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 9:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 10:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 3 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 11:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 12:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 13:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 14:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 15:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 16:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 17:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 18:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 19:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 20:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 21:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 22:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 23:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 24:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 25:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 26:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 27:
-Found 0 peace terms and 0 war terms.
+Found 22 peace terms and 19 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 28:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 41 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 29:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 30:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 31:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 45 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 32:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 22 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 33:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 34:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 17 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 35:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 36:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 21 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 37:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 38:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 13 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 39:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 40:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 20 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 41:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 18 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 42:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 33 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 43:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 24 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 44:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 43 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 45:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 19 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 46:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 47:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 13 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 48:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 33 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 49:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 50:
-Found 0 peace terms and 0 war terms.
+Found 16 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 51:
-Found 0 peace terms and 0 war terms.
+Found 30 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 52:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 53:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 54:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 55:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 56:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 57:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 18 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 58:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 59:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 20 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 60:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 61:
-Found 0 peace terms and 0 war terms.
+Found 14 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 62:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 63:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 29 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 64:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 65:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 66:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 67:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 68:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 17 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 69:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 70:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 71:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 21 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 72:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 21 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 73:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 14 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 74:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 26 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 75:
-Found 0 peace terms and 0 war terms.
+Found 13 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 76:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 77:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 78:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 79:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 80:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 81:
-Found 0 peace terms and 0 war terms.
+Found 25 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 82:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 83:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 84:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 85:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 86:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 38 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 87:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 88:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 89:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 23 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 90:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 91:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 92:
-Found 0 peace terms and 0 war terms.
+Found 18 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 93:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 94:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 23 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 95:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 96:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 97:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 98:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 10 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 99:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 100:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 101:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 102:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 14 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 103:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 104:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 105:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 106:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 107:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 108:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 109:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 110:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 111:
-Found 0 peace terms and 0 war terms.
+Found 20 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 112:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 113:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 114:
-Found 0 peace terms and 0 war terms.
+Found 17 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 115:
-Found 0 peace terms and 0 war terms.
+Found 16 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 116:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 117:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 118:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 119:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 120:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 121:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 122:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 123:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 124:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 125:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 126:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 127:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 128:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 129:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 130:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 131:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 132:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 133:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 134:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 135:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 136:
-Found 0 peace terms and 0 war terms.
+Found 16 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 137:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 138:
-Found 0 peace terms and 0 war terms.
+Found 13 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 139:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 140:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 141:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 142:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 143:
-Found 0 peace terms and 0 war terms.
+Found 26 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 144:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 145:
-Found 0 peace terms and 0 war terms.
+Found 14 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 146:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 147:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 11 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 148:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 149:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 150:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 151:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 152:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 153:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 154:
-Found 0 peace terms and 0 war terms.
+Found 16 peace terms and 13 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 155:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 156:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 157:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 158:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 159:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 160:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 161:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 2 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 162:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 163:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 164:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 165:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 166:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 167:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 168:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 13 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 169:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 170:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 171:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 172:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 173:
-Found 0 peace terms and 0 war terms.
+Found 19 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 174:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 175:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 17 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 176:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 16 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 177:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 178:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 179:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 17 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 180:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 181:
-Found 0 peace terms and 0 war terms.
+Found 16 peace terms and 20 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 182:
-Found 0 peace terms and 0 war terms.
+Found 18 peace terms and 22 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 183:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 17 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 184:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 185:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 186:
-Found 0 peace terms and 0 war terms.
+Found 19 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 187:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 188:
-Found 0 peace terms and 0 war terms.
+Found 22 peace terms and 33 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 189:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 20 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 190:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 191:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 45 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 192:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 12 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 193:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 19 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 194:
-Found 0 peace terms and 0 war terms.
+Found 13 peace terms and 20 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 195:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 196:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 197:
-Found 0 peace terms and 0 war terms.
+Found 13 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 198:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 199:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 200:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 201:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 202:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 203:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 204:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 205:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 14 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 206:
-Found 0 peace terms and 0 war terms.
+Found 14 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 207:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 208:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 209:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 17 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 210:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 53 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 211:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 212:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 213:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 214:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 215:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 16 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 216:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 217:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 218:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 19 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 219:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 47 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 220:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 26 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 221:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 21 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 222:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 23 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 223:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 224:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 19 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 225:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 21 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 226:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 2 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 227:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 8 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 228:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 21 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 229:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 230:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 231:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 30 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 232:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 233:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 36 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 234:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 235:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 236:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 237:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 238:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 239:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 240:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 241:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 242:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 2 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 243:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 18 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 244:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 245:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 2 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 246:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 247:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 248:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 249:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 250:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 251:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 252:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 253:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 254:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 255:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 256:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 257:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 258:
-Found 0 peace terms and 0 war terms.
+Found 14 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 259:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 260:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 261:
-Found 0 peace terms and 0 war terms.
+Found 21 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 262:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 16 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 263:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 13 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 264:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 12 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 265:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 266:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 267:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 268:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 269:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 270:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 17 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 271:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 272:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 273:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 274:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 275:
-Found 0 peace terms and 0 war terms.
+Found 29 peace terms and 14 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 276:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 277:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 278:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 17 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 279:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 280:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 4 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 281:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 282:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 283:
-Found 0 peace terms and 0 war terms.
+Found 18 peace terms and 26 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 284:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 285:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 286:
-Found 0 peace terms and 0 war terms.
+Found 16 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 287:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 288:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 289:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 290:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 291:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 292:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 293:
-Found 0 peace terms and 0 war terms.
+Found 8 peace terms and 13 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 294:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 295:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 296:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 16 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 297:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 10 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 298:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 299:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 300:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 301:
-Found 0 peace terms and 0 war terms.
+Found 1 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 302:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 4 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 303:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 304:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 305:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 306:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 307:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 308:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 309:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 310:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 311:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 312:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 313:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 314:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 315:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 316:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 317:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 318:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 319:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 20 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 320:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 321:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 15 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 322:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 11 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 323:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 324:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 13 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 325:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 19 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 326:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 24 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 327:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 328:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 329:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 330:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 10 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 331:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 332:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 9 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 333:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 334:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 335:
-Found 0 peace terms and 0 war terms.
+Found 7 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 336:
-Found 0 peace terms and 0 war terms.
+Found 19 peace terms and 1 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 337:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 338:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 339:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 340:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 341:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 342:
-Found 0 peace terms and 0 war terms.
+Found 13 peace terms and 5 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 343:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 344:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 345:
-Found 0 peace terms and 0 war terms.
+Found 5 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 346:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 347:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 348:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 6 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 349:
-Found 0 peace terms and 0 war terms.
+Found 0 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 350:
-Found 0 peace terms and 0 war terms.
+Found 10 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 351:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 8 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 352:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 353:
-Found 0 peace terms and 0 war terms.
+Found 2 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 354:
-Found 0 peace terms and 0 war terms.
+Found 12 peace terms and 7 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 355:
-Found 0 peace terms and 0 war terms.
+Found 18 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 356:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 2 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 357:
-Found 0 peace terms and 0 war terms.
+Found 6 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 358:
-Found 0 peace terms and 0 war terms.
+Found 15 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 359:
-Found 0 peace terms and 0 war terms.
+Found 9 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 360:
-Found 0 peace terms and 0 war terms.
+Found 21 peace terms and 0 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 361:
-Found 0 peace terms and 0 war terms.
+Found 24 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 362:
-Found 0 peace terms and 0 war terms.
-It was declared a peace-related Chapter
+Found 1 peace terms and 0 war terms.
+It was declared a war-related Chapter
 
 Evaluation for Chapter 363:
-Found 0 peace terms and 0 war terms.
+Found 11 peace terms and 11 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 364:
-Found 0 peace terms and 0 war terms.
+Found 3 peace terms and 3 war terms.
 It was declared a peace-related Chapter
 
 Evaluation for Chapter 365:
-Found 0 peace terms and 0 war terms.
+Found 4 peace terms and 4 war terms.
 It was declared a peace-related Chapter
 
