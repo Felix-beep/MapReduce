@@ -16,7 +16,7 @@ using SingleLineChapter = Line;
 using Book = vector<Chapter>;
 
 struct ChapterEvaluation {
-    const Chapter chapter;
+    const Chapter& chapter;
     const vector<int> peaceTerms;
     const vector<int> warTerms;
     const bool isWarChapter;
