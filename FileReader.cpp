@@ -189,23 +189,24 @@ auto MapVector = [](const vector<string> Vector) -> map<string, int> {
 };
 
 auto Filter = [](const string& Word, const map<string, int>& PeaceTerms, const map<string, int>& WarTerms) -> optional<int> {
-    if(PeaceTerms.find(Word) != PeaceTerms.end()) return 0;
-    if(WarTerms.find(Word) != WarTerms.end()) return 1;
+    //if(PeaceTerms.find(Word) != PeaceTerms.end()) return 0;
+    //if(WarTerms.find(Word) != WarTerms.end()) return 1;
     return nullopt;
 };
 
 auto FilterChapter = [](const Chapter& Chapter, const map<string, int>& PeaceTerms, const map<string, int>& WarTerms ) -> pair<vector<int>, vector<int>> {
     vector<int> PeaceDistances = { };
     vector<int> WarDistances = { };
-    /*int iterator = 0;
+    int iterator = 0;
 
+    cout << Chapter.size() << endl;
     auto evaluateWord = [&](Word word){
         optional<int> Result = Filter(word, PeaceTerms, WarTerms);
         if(Result.has_value()){
             if(*Result){
-                WarDistances.emplace_back(iterator);
+                WarDistances.push_back(iterator);
             } else {
-                PeaceDistances.emplace_back(iterator);
+                PeaceDistances.push_back(iterator);
             }
         }
     };
@@ -215,7 +216,7 @@ auto FilterChapter = [](const Chapter& Chapter, const map<string, int>& PeaceTer
     };
 
     for_each(Chapter.begin(), Chapter.end(), evaluateLine);
-    */
+    
     return make_pair(PeaceDistances, WarDistances);
 };
 
