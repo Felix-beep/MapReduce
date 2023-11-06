@@ -6,6 +6,7 @@
 #include <numeric>
 #include <optional>
 #include <future>
+#include <algorithm>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ using SingleLineChapter = Line;
 using Book = vector<Chapter>;
 
 struct ChapterEvaluation {
+    int chapterIndex;
     const Chapter& chapter;
     const vector<int> peaceTerms;
     const vector<int> warTerms;
@@ -148,19 +150,20 @@ auto IsALetter = [](const char letter) -> bool {
 
 auto SplitIntoWords = [](string WordLine) -> Line {
     Line Words;
-    Words.push_back(string());
 
-    // TO DO: change this into a transform
-    int currentWord = 0;
-    for(char letter : WordLine){
+    string currentWord = string();
+
+    for_each(WordLine.begin(), WordLine.end(), [&](char letter){
         if(letter == '\'' || IsALetter(letter)){
-            Words[currentWord].push_back(letter);
+            currentWord.push_back(letter);
         }
         else if(letter == ' '){
-            currentWord++;
-            Words.push_back(string());
+            Words.push_back(currentWord);
+            currentWord = string();
         }
-    }
+    });
+
+    Words.push_back(currentWord);
 
     return Words;
 };
@@ -240,6 +243,7 @@ auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMa
     bool isWarChapter = WarDistance < PeaceDistance;
 
     ChapterEvaluation Result{
+        0,
         Chapter,
         PairVectors.first,
         PairVectors.second,
@@ -249,36 +253,45 @@ auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMa
     return Result;
 };
 
+auto sortEvaluations = [](const vector<ChapterEvaluation>& Vector){
+
+    auto View = Vector | std::views::all;
+
+    /*std::ranges::sort(View.begin(), View.end(), [](const ChapterEvaluation& a, const ChapterEvaluation& b) {
+        return a.chapterIndex < b.chapterIndex;
+    });*/
+
+    vector<ChapterEvaluation> newVector(View.begin(), View.end());
+    return newVector;
+};
+
 auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMapping, const map<string, int>& WarMapping ) -> vector<ChapterEvaluation> {
     mutex mtx;
-    bool skipFirst = true;
     vector<ChapterEvaluation> EvaluatedChapters = {};
+    auto BookView = Book | std::views::all | std::views::drop(1);
     int i = 0;
 
     // Create a vector of threads
     vector<thread> activethreads = {};
 
-    // To Do: make it so this 
-    for_each(Book.begin(), Book.end(), [&](Chapter Chapter){
-        // To Do: create a view of the Book, and then just drop(1)
-        if(skipFirst){
-            skipFirst = false;
-        }else {
-            activethreads.emplace_back([&]() {
+    for_each(BookView.begin(), BookView.end(), [&](Chapter Chapter){
+        activethreads.emplace_back([&]() {
             int Threadnumber = ++i;
             cout << "Thread number " << Threadnumber << " started" << endl;
             cout << "Chapter Size at the beginning: " << Chapter.size() << endl;
-            auto result = EvaluateChapter(Book[Threadnumber], PeaceMapping, WarMapping);
+            ChapterEvaluation result = EvaluateChapter(Book[Threadnumber], PeaceMapping, WarMapping);
+            result.chapterIndex = Threadnumber-1;
             lock_guard<mutex> lock(mtx);
             EvaluatedChapters.emplace_back(result);
             cout << "Thread number " << Threadnumber << " finished" <<endl;
-            });
-        }
+        });
     });
 
     for (auto& thread : activethreads) {
         thread.join();
     }
+
+    EvaluatedChapters = sortEvaluations(EvaluatedChapters);
 
     return EvaluatedChapters;
 };

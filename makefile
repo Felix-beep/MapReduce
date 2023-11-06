@@ -4,7 +4,7 @@ all: MapReduce
 	mkdir -p out
 	
 MapReduce: .outputFolder
-	g++ -std=c++17 -lstdc++ -lm MapReduce.cpp -Wall -Wextra -Wno-unused-parameter -Werror -o out/MapReduce
+	g++ -std=c++20 -lstdc++ -lm MapReduce.cpp -Wall -Wextra -Wno-unused-parameter -Werror -o out/MapReduce
 	./out/MapReduce
 
 Tests: .outputFolder
