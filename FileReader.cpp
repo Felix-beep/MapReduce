@@ -190,7 +190,7 @@ auto MapVector = [](const vector<string> Vector) -> map<string, int> {
     return Mapping;
 };
 
-auto Filter = [](const string& Word, const map<string, int>& PeaceTerms, const map<string, int>& WarTerms) -> optional<bool> {
+auto Filter = [](const string& Word, const map<string, int>& PeaceTerms, const map<string, int>& WarTerms) -> optional<int> {
     if(PeaceTerms.find(Word) != PeaceTerms.end()) return 0;
     if(WarTerms.find(Word) != WarTerms.end()) return 1;
     return nullopt;
@@ -252,20 +252,30 @@ auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMa
     return Result;
 };
 
-auto sortEvaluations = [](const vector<pair<int, ChapterEvaluation>>& Vector){
+auto sortEvaluations = [](const vector<ChapterEvaluation>& Vector){
 
     vector<ChapterEvaluation> newVector;
+    vector<pair<int, int>> ChapterIndexPair;
 
-    ranges::sort(Vector.begin(), Vector.end(), [](pair<int, ChapterEvaluation> pairA, pair<int, ChapterEvaluation> pairB){ return pairA.first < pairB.first; });
-    
-    transform(Vector.begin(), Vector.end(), back_inserter(newVector), [=](const pair<int, ChapterEvaluation> element){ return element.second; });
+    int iter = 0;
+    for_each(Vector.begin(), Vector.end(), [&](ChapterEvaluation Eval){ 
+        ChapterIndexPair.push_back(make_pair(Eval.chapterIndex, iter++));
+    });
+
+    std::sort(ChapterIndexPair.begin(), ChapterIndexPair.end(), [](pair<int, int> PairOne, pair<int, int> PairTwo){
+        return PairOne.first < PairTwo.first;
+    });
+
+    transform(ChapterIndexPair.begin(), ChapterIndexPair.end(), back_inserter(newVector), [=](const pair<int, int> element){
+        return Vector[element.second]; 
+    });
 
     return newVector;
 };
 
 auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMapping, const map<string, int>& WarMapping ) -> vector<ChapterEvaluation> {
     mutex mtx;
-    vector<pair<int, ChapterEvaluation>> EvaluatedChapters = {};
+    vector<ChapterEvaluation> EvaluatedChapters;
     auto BookView = Book | std::views::all | std::views::drop(1);
     int i = 0;
 
@@ -280,7 +290,7 @@ auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMap
             cout << "Chapter Size at the beginning: " << Chapter.size() << endl;
             cout << "Chapter Size while Filtering: " << Book[Threadnumber].size() << endl;
             */
-            pair<int, ChapterEvaluation> result = make_pair<int, ChapterEvaluation>(i, EvaluateChapter(Book[Threadnumber], PeaceMapping, WarMapping));
+            ChapterEvaluation result = EvaluateChapter(Book[Threadnumber], PeaceMapping, WarMapping);
             lock_guard<mutex> lock(mtx);
             EvaluatedChapters.emplace_back(result);
             cout << "Thread number " << Threadnumber << " finished" <<endl;
