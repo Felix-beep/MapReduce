@@ -222,14 +222,6 @@ auto FilterChapter = [](const Chapter& Chapter, const map<string, int>& PeaceTer
 };
 
 auto avrgDistance(const vector<int>& Vector) -> float {
-    /*int sum = 0;
-    int last = *Vector.begin();
-
-    for_each(Vector.begin(), Vector.end(), [&](int num){
-        sum += num - last;
-        last = num;
-    });
-    return int(sum / Vector.size());*/
     return (Vector.size() == 0) ? 0 : 1 / Vector.size();
 }
 
@@ -282,15 +274,12 @@ auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMap
     // Create a vector of threads
     vector<thread> activethreads = {};
 
-    ranges::for_each(BookView.begin(), BookView.end(), [&](Chapter Chapter){
+    ranges::for_each(BookView.begin(), BookView.end(), [&](const Chapter& Chapter){
         activethreads.emplace_back([&]() {
             int Threadnumber = ++i;
             cout << "Thread number " << Threadnumber << " started" << endl;
-            /*
-            cout << "Chapter Size at the beginning: " << Chapter.size() << endl;
-            cout << "Chapter Size while Filtering: " << Book[Threadnumber].size() << endl;
-            */
-            ChapterEvaluation result = EvaluateChapter(Book[Threadnumber], PeaceMapping, WarMapping);
+            //cout << "Chapter Size at the beginning: " << Chapter.size() << "/" << Book[Threadnumber].size() << endl;
+            ChapterEvaluation result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
             result.chapterIndex = Threadnumber;
             lock_guard<mutex> lock(mtx);
             EvaluatedChapters.emplace_back(result);
@@ -302,9 +291,9 @@ auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMap
         thread.join();
     }
 
-    vector<ChapterEvaluation> EvaluatedChaptersResult = sortEvaluations(EvaluatedChapters);
+    vector<ChapterEvaluation> EvaluatedChaptersSorted = sortEvaluations(EvaluatedChapters);
 
-    return EvaluatedChaptersResult;
+    return EvaluatedChaptersSorted;
 };
 
 auto ConvertToBook = [](string filename) -> Book {
