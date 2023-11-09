@@ -291,6 +291,7 @@ auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMap
             cout << "Chapter Size while Filtering: " << Book[Threadnumber].size() << endl;
             */
             ChapterEvaluation result = EvaluateChapter(Book[Threadnumber], PeaceMapping, WarMapping);
+            result.chapterIndex = Threadnumber;
             lock_guard<mutex> lock(mtx);
             EvaluatedChapters.emplace_back(result);
             cout << "Thread number " << Threadnumber << " finished" <<endl;
