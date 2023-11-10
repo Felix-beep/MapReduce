@@ -277,13 +277,11 @@ auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMap
     ranges::for_each(BookView.begin(), BookView.end(), [&](const Chapter& Chapter){
         activethreads.emplace_back([&]() {
             int Threadnumber = ++i;
-            cout << "Thread number " << Threadnumber << " started" << endl;
             //cout << "Chapter Size at the beginning: " << Chapter.size() << "/" << Book[Threadnumber].size() << endl;
             ChapterEvaluation result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
             result.chapterIndex = Threadnumber;
             lock_guard<mutex> lock(mtx);
             EvaluatedChapters.emplace_back(result);
-            cout << "Thread number " << Threadnumber << " finished" <<endl;
         });
     });
 
