@@ -52,7 +52,7 @@ auto WriteAnalyzedChapter = [](const ChapterEvaluation EvaluatedChapter, int num
     if(append) outputFile.open("./TextFolders/AnalysationResults.txt", std::ios_base::app);
     else outputFile.open("./TextFolders/AnalysationResults.txt");
 
-    outputFile << "Evaluation for Chapter " << num << ":" << endl ;
+    outputFile << "Evaluation for Chapter " << EvaluatedChapter.chapterIndex << ":" << endl ;
     int wordcount = 1;
 
     if(printText){
@@ -73,9 +73,14 @@ auto WriteAnalyzedChapter = [](const ChapterEvaluation EvaluatedChapter, int num
         for_each(EvaluatedChapter.chapter.begin(), EvaluatedChapter.chapter.end(), printLine );
         outputFile << endl;
     }
+
     
     outputFile << "Found " << EvaluatedChapter.peaceTerms.size() << " peace terms";
-    outputFile << " and " << EvaluatedChapter.warTerms.size() << " war terms." << endl;;
+    outputFile << " and " << EvaluatedChapter.warTerms.size() << " war terms." << endl;
+    outputFile << "At ";
+    for_each(EvaluatedChapter.peaceTerms.begin(), EvaluatedChapter.peaceTerms.end(), [&](int pos){ outputFile << pos << " "; });
+    for_each(EvaluatedChapter.warTerms.begin(), EvaluatedChapter.warTerms.end(), [&](int pos){ outputFile << pos << " "; });
+    
     outputFile << "It was declared a " << ((EvaluatedChapter.isWarChapter) ? "war-related" : "peace-related") << " Chapter" << endl << endl;
     return;
 };
@@ -225,15 +230,17 @@ auto avrgDistance(const vector<int>& Vector) -> float {
     return (Vector.size() == 0) ? 0 : 1 / Vector.size();
 }
 
-auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMapping, const map<string, int> WarMapping) -> ChapterEvaluation {
+auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMapping, const map<string, int> WarMapping) -> ChapterEvaluation* {
     
     auto PairVectors = FilterChapter(Chapter, PeaceMapping, WarMapping);
+
+    
 
     int PeaceDistance = avrgDistance(PairVectors.first);
     int WarDistance = avrgDistance(PairVectors.second);
     bool isWarChapter = WarDistance < PeaceDistance;
 
-    ChapterEvaluation Result{
+    ChapterEvaluation* Result = new ChapterEvaluation{
         0,
         Chapter,
         PairVectors.first,
@@ -275,13 +282,15 @@ auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMap
     vector<thread> activethreads = {};
 
     ranges::for_each(BookView.begin(), BookView.end(), [&](const Chapter& Chapter){
-        activethreads.emplace_back([&]() {
-            int Threadnumber = ++i;
+        int Threadnumber = ++i;
+        activethreads.emplace_back([&EvaluatedChapters, &mtx, &Chapter, &PeaceMapping, &WarMapping, Threadnumber]() {
             //cout << "Chapter Size at the beginning: " << Chapter.size() << "/" << Book[Threadnumber].size() << endl;
-            ChapterEvaluation result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
-            result.chapterIndex = Threadnumber;
+            ChapterEvaluation* result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
+            result->chapterIndex = Threadnumber;
             lock_guard<mutex> lock(mtx);
-            EvaluatedChapters.emplace_back(result);
+            for_each(result->peaceTerms.begin(), result->peaceTerms.end(), [&](int pos){ cout << pos << endl; });
+            //cout << Threadnumber << endl;
+            EvaluatedChapters.emplace_back(*result);
         });
     });
 

@@ -34,7 +34,7 @@ int main(int argc, char** argv)
     
     
     ChapterThemes = EvaluateAllChapters(WordView, PeaceMapping, WarMapping);
-    WriteAnalyzedBook(ChapterThemes, false);
+    WriteAnalyzedBook(ChapterThemes, true);
     writeToFile(ChapterThemes);
     
     return 0;
