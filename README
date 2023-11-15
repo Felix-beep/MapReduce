@@ -1,17 +1,18 @@
 
-1. Enter the following Command to build:
+1. Enter the following Command to build and run automatic tests:
 - make
 
 2. Enter the following Command to execute:
 - out/MapReduce
 
-3. Enter the following Command to text:
+3. Enter the following Command to rerun the tests:
 - out/Test
 
+And then you should be good to go!
 
 TO DO:
-[ ] ReadMe
-[ ] Tests
-[ ] Do Tokenisation in Threads
+[X] ReadMe
+[X] Tests
+[X] Do Tokenisation in Threads
 [ ] PowerPoint
 [X] Time

@@ -14,8 +14,8 @@ auto IsALetter = [](const char letter) -> bool {
 
 // calculations
 
-auto avrgDistance = [](const vector<int>& Vector) -> float {
-    return (Vector.size() == 0) ? 0 : 1 / Vector.size();
+auto avrgDistance = [](const vector<int>& Vector) -> double {
+    return (Vector.size() == 0) ? 0 : Vector.size();
 };
 
 // String Creators
@@ -110,7 +110,7 @@ auto SplitChapterIntoWords = [](const vector<string>& InputChapter) -> Chapter {
 
 // Mapping
 
-auto ReadFromSolutions = [](const vector<string>& lines) -> vector<bool> {
+auto MapFromSolutions = [](const vector<string>& lines) -> vector<bool> {
     vector<bool> ChapterThemes;
 
     for_each(lines.begin(), lines.end(), [&](string line){
@@ -128,7 +128,6 @@ auto MapVector = [](const vector<string> Vector) -> map<string, int> {
     }
     return Mapping;
 };
-
 
 // Filtering
 

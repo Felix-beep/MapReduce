@@ -18,7 +18,7 @@ int main(int argc, char** argv)
     if(WordView.empty()) return 1;
 
     vector<string> SolutionLines = ReadLinesFromFile(Filepath + "Solution.txt");
-    vector<bool> ChapterThemesSolution = ReadFromSolutions(SolutionLines);
+    vector<bool> ChapterThemesSolution = MapFromSolutions(SolutionLines);
 
     vector<ChapterEvaluation> ChapterThemes;
 
