@@ -6,7 +6,8 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include "FileReader.cpp"
+
+#include "ImpureFunctions.cpp"
 
 using namespace std;
 
@@ -34,7 +35,7 @@ int main(int argc, char** argv)
     
     
     ChapterThemes = EvaluateAllChapters(WordView, PeaceMapping, WarMapping);
-    WriteAnalyzedBook(ChapterThemes, true);
+    WriteAnalyzedBook(ChapterThemes, false);
     writeToFile(ChapterThemes);
     
     return 0;
