@@ -6,22 +6,24 @@
 #include <iostream>
 #include <string>
 #include <map>
-#include "FileReader.cpp"
+
+#include "ImpureFunctions.cpp"
 
 using namespace std;
 
 int main(int argc, char** argv)
 {
-    vector<string> WarTerms = ReadLinesFromFile("./TextFolders/War.txt");
+    string Filepath = "./TextFolder/";
+    vector<string> WarTerms = ReadLinesFromFile(Filepath + "War.txt");
     map<string, int> WarMapping = MapVector(WarTerms);
 
-    vector<string> PeaceTerms = ReadLinesFromFile("./TextFolders/Peace.txt");
+    vector<string> PeaceTerms = ReadLinesFromFile(Filepath + "Peace.txt");
     map<string, int> PeaceMapping = MapVector(PeaceTerms);
 
-    Book WordView = ConvertToBook("./TextFolders/Book.txt");
+    Book WordView = ConvertToBook(Filepath + "Book.txt");
     if(WordView.empty()) return 1;
 
-    vector<string> SolutionLines = ReadLinesFromFile("./TextFolders/Solution.txt");
+    vector<string> SolutionLines = ReadLinesFromFile(Filepath + "Solution.txt");
     vector<bool> ChapterThemesSolution = ReadFromSolutions(SolutionLines);
 
 
@@ -34,8 +36,12 @@ int main(int argc, char** argv)
     
     
     ChapterThemes = EvaluateAllChapters(WordView, PeaceMapping, WarMapping);
-    WriteAnalyzedBook(ChapterThemes, false);
-    writeToFile(ChapterThemes);
+
+    string AnalysationResults = BookAnalysationToString(ChapterThemes, false);
+    PrintText(AnalysationResults, "AnalysationResults.txt");
+
+    string ThemeResults = ThemesToString(ChapterThemes);
+    PrintText(ThemeResults, "Results.txt");
     
     return 0;
 }

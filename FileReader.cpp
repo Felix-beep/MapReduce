@@ -6,6 +6,7 @@
 #include <numeric>
 #include <optional>
 #include <future>
+#include <algorithm>
 
 using namespace std;
 
@@ -16,6 +17,7 @@ using SingleLineChapter = Line;
 using Book = vector<Chapter>;
 
 struct ChapterEvaluation {
+    int chapterIndex;
     const Chapter& chapter;
     const vector<int> peaceTerms;
     const vector<int> warTerms;
@@ -50,7 +52,7 @@ auto WriteAnalyzedChapter = [](const ChapterEvaluation EvaluatedChapter, int num
     if(append) outputFile.open("./TextFolders/AnalysationResults.txt", std::ios_base::app);
     else outputFile.open("./TextFolders/AnalysationResults.txt");
 
-    outputFile << "Evaluation for Chapter " << num << ":" << endl ;
+    outputFile << "Evaluation for Chapter " << EvaluatedChapter.chapterIndex << ":" << endl ;
     int wordcount = 1;
 
     if(printText){
@@ -71,9 +73,14 @@ auto WriteAnalyzedChapter = [](const ChapterEvaluation EvaluatedChapter, int num
         for_each(EvaluatedChapter.chapter.begin(), EvaluatedChapter.chapter.end(), printLine );
         outputFile << endl;
     }
+
     
     outputFile << "Found " << EvaluatedChapter.peaceTerms.size() << " peace terms";
-    outputFile << " and " << EvaluatedChapter.warTerms.size() << " war terms." << endl;;
+    outputFile << " and " << EvaluatedChapter.warTerms.size() << " war terms." << endl;
+    outputFile << "At ";
+    for_each(EvaluatedChapter.peaceTerms.begin(), EvaluatedChapter.peaceTerms.end(), [&](int pos){ outputFile << pos << " "; });
+    for_each(EvaluatedChapter.warTerms.begin(), EvaluatedChapter.warTerms.end(), [&](int pos){ outputFile << pos << " "; });
+    
     outputFile << "It was declared a " << ((EvaluatedChapter.isWarChapter) ? "war-related" : "peace-related") << " Chapter" << endl << endl;
     return;
 };
@@ -83,7 +90,6 @@ auto WriteAnalyzedBook = [](const vector<ChapterEvaluation>& EvaluatedChapter, b
     for_each(EvaluatedChapter.begin(), EvaluatedChapter.end(), [&](const ChapterEvaluation& Chapter){
         WriteAnalyzedChapter(Chapter, num, printText, (num > 1));
         ++num;
-        cout << num << endl;
     });
 };
 
@@ -149,19 +155,20 @@ auto IsALetter = [](const char letter) -> bool {
 
 auto SplitIntoWords = [](string WordLine) -> Line {
     Line Words;
-    Words.push_back(string());
 
-    // TO DO: change this into a transform
-    int currentWord = 0;
-    for(char letter : WordLine){
+    string currentWord = string();
+
+    for_each(WordLine.begin(), WordLine.end(), [&](char letter){
         if(letter == '\'' || IsALetter(letter)){
-            Words[currentWord].push_back(letter);
+            currentWord.push_back(letter);
         }
         else if(letter == ' '){
-            currentWord++;
-            Words.push_back(string());
+            Words.push_back(currentWord);
+            currentWord = string();
         }
-    }
+    });
+
+    Words.push_back(currentWord);
 
     return Words;
 };
@@ -203,9 +210,9 @@ auto FilterChapter = [](const Chapter& Chapter, const map<string, int>& PeaceTer
         optional<int> Result = Filter(word, PeaceTerms, WarTerms);
         if(Result.has_value()){
             if(*Result){
-                WarDistances.emplace_back(iterator);
+                WarDistances.push_back(iterator);
             } else {
-                PeaceDistances.emplace_back(iterator);
+                PeaceDistances.push_back(iterator);
             }
         }
     };
@@ -215,31 +222,26 @@ auto FilterChapter = [](const Chapter& Chapter, const map<string, int>& PeaceTer
     };
 
     for_each(Chapter.begin(), Chapter.end(), evaluateLine);
-
+    
     return make_pair(PeaceDistances, WarDistances);
 };
 
 auto avrgDistance(const vector<int>& Vector) -> float {
-    /*int sum = 0;
-    int last = *Vector.begin();
-
-    for_each(Vector.begin(), Vector.end(), [&](int num){
-        sum += num - last;
-        last = num;
-    });
-    return int(sum / Vector.size());*/
     return (Vector.size() == 0) ? 0 : 1 / Vector.size();
 }
 
-auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMapping, const map<string, int> WarMapping) -> ChapterEvaluation {
+auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMapping, const map<string, int> WarMapping) -> ChapterEvaluation* {
     
     auto PairVectors = FilterChapter(Chapter, PeaceMapping, WarMapping);
+
+    
 
     int PeaceDistance = avrgDistance(PairVectors.first);
     int WarDistance = avrgDistance(PairVectors.second);
     bool isWarChapter = WarDistance < PeaceDistance;
 
-    ChapterEvaluation Result{
+    ChapterEvaluation* Result = new ChapterEvaluation{
+        0,
         Chapter,
         PairVectors.first,
         PairVectors.second,
@@ -249,22 +251,56 @@ auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMa
     return Result;
 };
 
+auto sortEvaluations = [](const vector<ChapterEvaluation>& Vector){
+
+    vector<ChapterEvaluation> newVector;
+    vector<pair<int, int>> ChapterIndexPair;
+
+    int iter = 0;
+    for_each(Vector.begin(), Vector.end(), [&](ChapterEvaluation Eval){ 
+        ChapterIndexPair.push_back(make_pair(Eval.chapterIndex, iter++));
+    });
+
+    std::sort(ChapterIndexPair.begin(), ChapterIndexPair.end(), [](pair<int, int> PairOne, pair<int, int> PairTwo){
+        return PairOne.first < PairTwo.first;
+    });
+
+    transform(ChapterIndexPair.begin(), ChapterIndexPair.end(), back_inserter(newVector), [=](const pair<int, int> element){
+        return Vector[element.second]; 
+    });
+
+    return newVector;
+};
+
 auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMapping, const map<string, int>& WarMapping ) -> vector<ChapterEvaluation> {
-    bool skipFirst = true;
-    vector<ChapterEvaluation> EvaluatedChapters = {};
+    mutex mtx;
+    vector<ChapterEvaluation> EvaluatedChapters;
+    auto BookView = Book | std::views::all | std::views::drop(1);
+    int i = 0;
 
-    for(Chapter Chapter : Book){
-        // To Do: create a view of the Book, and then just drop(1)
-        if(skipFirst){
-            skipFirst = false;
-            continue;
-        }
+    // Create a vector of threads
+    vector<thread> activethreads = {};
 
-        auto result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
-        EvaluatedChapters.emplace_back(result);
+    ranges::for_each(BookView.begin(), BookView.end(), [&](const Chapter& Chapter){
+        int Threadnumber = ++i;
+        activethreads.emplace_back([&EvaluatedChapters, &mtx, &Chapter, &PeaceMapping, &WarMapping, Threadnumber]() {
+            //cout << "Chapter Size at the beginning: " << Chapter.size() << "/" << Book[Threadnumber].size() << endl;
+            ChapterEvaluation* result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
+            result->chapterIndex = Threadnumber;
+            lock_guard<mutex> lock(mtx);
+            for_each(result->peaceTerms.begin(), result->peaceTerms.end(), [&](int pos){ cout << pos << endl; });
+            //cout << Threadnumber << endl;
+            EvaluatedChapters.emplace_back(*result);
+        });
+    });
+
+    for (auto& thread : activethreads) {
+        thread.join();
     }
 
-    return EvaluatedChapters;
+    vector<ChapterEvaluation> EvaluatedChaptersSorted = sortEvaluations(EvaluatedChapters);
+
+    return EvaluatedChaptersSorted;
 };
 
 auto ConvertToBook = [](string filename) -> Book {
