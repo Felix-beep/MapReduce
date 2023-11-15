@@ -116,6 +116,17 @@ auto SplitChaptersIntoWords = [](vector<vector<string>> InputBook) -> Book {
 
 // Mapping
 
+auto ReadFromSolutions = [](const vector<string>& lines) -> vector<bool> {
+    vector<bool> ChapterThemes;
+
+    for_each(lines.begin(), lines.end(), [&](string line){
+        if(line.find("peace") != string::npos) ChapterThemes.push_back(false);
+        if(line.find("war") != string::npos) ChapterThemes.push_back(true);
+    });
+
+    return ChapterThemes;
+};
+
 auto MapVector = [](const vector<string> Vector) -> map<string, int> {
     map<string, int> Mapping;
     for(string Word : Vector){

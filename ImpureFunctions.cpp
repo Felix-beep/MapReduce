@@ -24,16 +24,6 @@ auto PrintText = [](const string Text, string Filename) -> void {
 };
 
 // Read
-auto ReadFromSolutions = [](const vector<string>& lines) -> vector<bool> {
-    vector<bool> ChapterThemes;
-
-    for_each(lines.begin(), lines.end(), [&](string line){
-        if(line.find("peace") != string::npos) ChapterThemes.push_back(false);
-        if(line.find("war") != string::npos) ChapterThemes.push_back(true);
-    });
-
-    return ChapterThemes;
-};
 
 auto ReadLinesFromFile = [](const string& filename) -> vector<string> {
     ifstream inputFile(filename);

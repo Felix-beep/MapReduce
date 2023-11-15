@@ -1,0 +1,16 @@
+
+1. Enter the following Command to build:
+- make
+
+2. Enter the following Command to execute:
+- out/MapReduce
+
+3. Enter the following Command to text:
+- out/Test
+
+
+TO DO:
+[ ] ReadMe
+[ ] Tests
+[ ] Do Tokenisation in Threads
+[ ] PowerPoint
