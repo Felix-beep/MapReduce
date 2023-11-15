@@ -11,6 +11,8 @@
 #include <future>
 #include <algorithm>
 #include <sstream>
+#include <map>
+#include <ranges>
 
 using Word = std::string;
 using Line = std::vector<Word>;

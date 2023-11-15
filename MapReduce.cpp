@@ -1,18 +1,12 @@
-#include <functional>
-#include <list>
-#include <random>
-#include <ranges>
-#include <vector>
-#include <iostream>
-#include <string>
-#include <map>
-
+#include "Includes.cpp"
 #include "ImpureFunctions.cpp"
 
 using namespace std;
 
 int main(int argc, char** argv)
 {
+    auto start = std::chrono::high_resolution_clock::now();
+
     string Filepath = "./TextFolder/";
     vector<string> WarTerms = ReadLinesFromFile(Filepath + "War.txt");
     map<string, int> WarMapping = MapVector(WarTerms);
@@ -36,6 +30,10 @@ int main(int argc, char** argv)
     
     
     ChapterThemes = EvaluateAllChapters(WordView, PeaceMapping, WarMapping);
+
+    auto end = std::chrono::high_resolution_clock::now();
+    std::chrono::duration<double> duration = end - start;
+    PrintText("Program took " + std::to_string(duration.count()) + " seconds", "TimeResult.txt");
 
     string AnalysationResults = BookAnalysationToString(ChapterThemes, false);
     PrintText(AnalysationResults, "AnalysationResults.txt");
