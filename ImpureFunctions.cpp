@@ -3,7 +3,6 @@
 
 using namespace std;
 
-
 // Debug
 auto PrintChapter = [](const Chapter& Chapter, int num) -> void {
     cout << "Chapter " << num << endl;
@@ -44,7 +43,7 @@ auto ReadLinesFromFile = [](const string& filename) -> vector<string> {
 };
 
 
-auto ReadTextIntoChapters = [](const string& filename) -> vector<vector<string>> {
+auto ReadBookFromFile = [](const string& filename) -> vector<vector<string>> {
     ifstream inputFile(filename);
     vector<vector<string>> chapters;
     chapters.push_back(vector<string>());    
@@ -69,9 +68,4 @@ auto ReadTextIntoChapters = [](const string& filename) -> vector<vector<string>>
     inputFile.close();
 
     return chapters;
-};
-
-auto ConvertToBook = [](string filename) -> Book {
-    vector<vector<string>> Chapters = ReadTextIntoChapters(filename);
-    return SplitChaptersIntoWords(Chapters);
 };

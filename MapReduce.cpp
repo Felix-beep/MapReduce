@@ -14,14 +14,12 @@ int main(int argc, char** argv)
     vector<string> PeaceTerms = ReadLinesFromFile(Filepath + "Peace.txt");
     map<string, int> PeaceMapping = MapVector(PeaceTerms);
 
-    Book WordView = ConvertToBook(Filepath + "Book.txt");
+    vector<vector<string>> WordView = ReadBookFromFile(Filepath + "Book.txt");
     if(WordView.empty()) return 1;
 
     vector<string> SolutionLines = ReadLinesFromFile(Filepath + "Solution.txt");
     vector<bool> ChapterThemesSolution = ReadFromSolutions(SolutionLines);
 
-
-    
     vector<ChapterEvaluation> ChapterThemes;
 
     /*int ChapterNumber = 9;

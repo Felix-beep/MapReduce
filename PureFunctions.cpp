@@ -14,9 +14,9 @@ auto IsALetter = [](const char letter) -> bool {
 
 // calculations
 
-auto avrgDistance(const vector<int>& Vector) -> float {
+auto avrgDistance = [](const vector<int>& Vector) -> float {
     return (Vector.size() == 0) ? 0 : 1 / Vector.size();
-}
+};
 
 // String Creators
 
@@ -100,18 +100,12 @@ auto SplitStringIntoWords = [](string WordLine) -> Line {
     return Words;
 };
 
-auto SplitChaptersIntoWords = [](vector<vector<string>> InputBook) -> Book {
-    Book Book;
-
-    for_each(InputBook.begin(), InputBook.end(), [&](vector<string> InputChapter){
-        Chapter Chapter;
-        for_each(InputChapter.begin(), InputChapter.end(), [&](string Line){
-            Chapter.push_back(SplitStringIntoWords(Line));
-        });
-        Book.push_back(Chapter);
+auto SplitChapterIntoWords = [](const vector<string>& InputChapter) -> Chapter {
+    Chapter SplitChapter;
+    for_each(InputChapter.begin(), InputChapter.end(), [&](string Line){
+        SplitChapter.push_back(SplitStringIntoWords(Line));
     });
-
-    return Book;
+    return SplitChapter;
 };
 
 // Mapping
@@ -220,10 +214,10 @@ auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMap
 
     vector<thread> activethreads = {};
 
-    ranges::for_each(BookView.begin(), BookView.end(), [&](const Chapter& Chapter){
+    ranges::for_each(BookView.begin(), BookView.end(), [&](const vector<string>& chapter){
         int Threadnumber = ++i;
-        activethreads.emplace_back([&EvaluatedChapters, &mtx, &Chapter, &PeaceMapping, &WarMapping, Threadnumber]() {
-            ChapterEvaluation result = EvaluateChapter(Chapter, PeaceMapping, WarMapping);
+        activethreads.emplace_back([&EvaluatedChapters, &mtx, &chapter, &PeaceMapping, &WarMapping, Threadnumber]() {
+            ChapterEvaluation result = EvaluateChapter(SplitChapterIntoWords(chapter), PeaceMapping, WarMapping);
             result.chapterIndex = Threadnumber;
             lock_guard<mutex> lock(mtx);
             EvaluatedChapters.emplace_back(result);

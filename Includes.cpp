@@ -18,7 +18,8 @@ using Word = std::string;
 using Line = std::vector<Word>;
 using Chapter = std::vector<Line>;
 using SingleLineChapter = Line;
-using Book = std::vector<Chapter>;
+
+using Book = std::vector<std::vector<std::string>>;
 
 struct ChapterEvaluation {
     int chapterIndex;
