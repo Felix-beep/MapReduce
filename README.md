@@ -13,7 +13,7 @@ The results of the program can be found in the then created folder named "Result
 
 ## Setup:
 
-1. Be sure you can run C++20
+Be sure you can run C++20
 
 You may replace the following files:
 - Book.txt with a different Book:
@@ -40,17 +40,17 @@ each word needs to be seperated by a new line and may include apostrophes (ex: "
 
 ## Specific Testing  Commands in Linux:
 
-1. Manually build solutions:
-- make
+Manually build solutions:
+run 'make'
 
-2. Execute a specific solution:
-### MapReduce:
-- out/MapReduce
-### automatic Tests:
-- out/Test
+Execute a specific solution:
+- MapReduce:
+run 'out/MapReduce'
+- Tests:
+run 'out/Test'
 
-3. Reduce the program to only its necessary files:
-- make clean
+Reduce the program to only its necessary files:
+run 'make clean'
 
 
 TO DO:
