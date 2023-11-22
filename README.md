@@ -53,12 +53,11 @@ Manually build solutions:
 
     run make
 
-Execute a specific solution:
-MapReduce:
+Run MapReduce:
     
     out/MapReduce
     
-Tests:
+Run Tests:
 
     out/Test
 
@@ -66,10 +65,3 @@ Reduce the program to only its necessary files:
 
     make clean
 
-
-TO DO:
-[X] ReadMe
-[X] Tests
-[X] Do Tokenisation in Threads
-[ ] PowerPoint
-[X] Time
