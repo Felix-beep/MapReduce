@@ -41,16 +41,16 @@ each word needs to be seperated by a new line and may include apostrophes (ex: "
 ## Specific Testing  Commands in Linux:
 
 Manually build solutions:
-run 'make'
+- run 'make'
 
 Execute a specific solution:
-- MapReduce:
+    MapReduce:
 run 'out/MapReduce'
-- Tests:
-run 'out/Test'
+    Tests:
+-run 'out/Test'
 
 Reduce the program to only its necessary files:
-run 'make clean'
+-run 'make clean'
 
 
 TO DO:
