@@ -1,7 +1,12 @@
 # Usage:
 
-This Project is made to analyze a Book ("War and Peace", by Leo Tolstoy) based on the thematics of its chapters.
-A Chapter with as many or more peace related terms is defined as a 
+This Project is made to analyze a Book ("War and Peace", by Leo Tolstoy) based on the thematics of its chapters. This book is saved as "Book.txt" in the "TextFolder"-Folder.
+A chapter with as many or more peace related terms than war related terms is defined as a peace-chapter and vice versa.
+What term is defined as a peace-term or war-term is defined in the respective Folder in the "TextFolder"-Folder.
+The results of the program can be found in the then created folder named "ResultFolder". 
+"Results.txt" displays the chapter-theme.
+"AnalysationResults.txt" displays the analysation.
+"TimeResult.txt" displays how long the program took (excluding writing to output files).
 
 
 # Project Instructions
