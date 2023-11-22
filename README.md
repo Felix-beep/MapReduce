@@ -31,26 +31,40 @@ each word needs to be seperated by a new line and may include apostrophes (ex: "
 ## Automatic Testing and Running the Program:
 
 ### Windows:
-1. Run 'Set-ExecutionPolicy RemoteSinged' in Powershell to grant permissions if necessary.
-2. Execute './run.bat' to run the script.
+1. Run the following command in Powershell to grant permissions if necessary.
+
+        Set-ExecutionPolicy RemoteSinged
+3. Execute the following command to run the script.
+
+        ./run.bat
 
 ### Linux:
-1. Run 'chmod -x run.sh' in Terminal to give the script the needed permissions.
-2. Execute './run.sh' to run the script.
+1. Run the following command in Terminal to give the script the needed permissions.
+
+       chmod -x run.sh
+     
+4. Execute the following command in Terminal to run the script.
+
+       ./run.sh
 
 ## Specific Testing  Commands in Linux:
 
 Manually build solutions:
-- run 'make'
+
+    run make
 
 Execute a specific solution:
-    MapReduce:
-run 'out/MapReduce'
-    Tests:
--run 'out/Test'
+MapReduce:
+    
+    out/MapReduce
+    
+Tests:
+
+    out/Test
 
 Reduce the program to only its necessary files:
--run 'make clean'
+
+    make clean
 
 
 TO DO:
