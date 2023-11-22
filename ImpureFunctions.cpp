@@ -54,15 +54,34 @@ auto ReadBookFromFile = [](const string& filename) -> vector<vector<string>> {
 
     string line;
     int currentchapter = 0;
-    while(std::getline(inputFile, line)){
-        if(line.length() != 0){
+    bool bookIsOver = false;
+    bool bookHasStarted = false;
+    while(std::getline(inputFile, line) && !bookIsOver){
+        if(line.length() == 0){
+            continue;
+        }
+
+        if( !bookHasStarted && line.compare(0, 25, "*** START OF THE PROJECT ") == 0){
+            cout << line << endl;
+            cout << "book has started" << endl;
+            bookHasStarted = true;
+            continue;
+        }
+
+        if ( bookHasStarted && line.compare(0, 23, "*** END OF THE PROJECT") == 0){
+            bookIsOver = true;
+            continue;
+        } 
+        
+        if( bookHasStarted ){
             if(line.compare(0, 7, "CHAPTER") == 0){
                 currentchapter++;
                 chapters.push_back(vector<string>());
             } else {
                 chapters[currentchapter].push_back(line);
-            }
+            } 
         }
+        
     }
 
     inputFile.close();

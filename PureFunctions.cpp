@@ -193,7 +193,7 @@ auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMa
 
     int PeaceDistance = avrgDistance(PairVectors.first);
     int WarDistance = avrgDistance(PairVectors.second);
-    bool isWarChapter = WarDistance < PeaceDistance;
+    bool isWarChapter = WarDistance > PeaceDistance;
 
     ChapterEvaluation Result{
         0,

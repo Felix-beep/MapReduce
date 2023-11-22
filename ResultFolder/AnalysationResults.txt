@@ -1455,6 +1455,6 @@ Found 1 peace terms and 0 war terms.
 At It was declared a peace-related Chapter
 
 Evaluation for Chapter 365:
-Found 1 peace terms and 8 war terms.
+Found 2 peace terms and 8 war terms.
 At It was declared a war-related Chapter
 

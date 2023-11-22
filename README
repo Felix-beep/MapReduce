@@ -1,12 +1,29 @@
 
-1. Enter the following Command to build and run automatic tests:
+1. Enter the following Command to automatically run tests and then the program:
+    Windows:
+- Set-ExecutionPolicy RemoteSigned (to give the script the needed permissions)
+- ./run.bat (to run the script)
+
+    Linux:
+- chmod -x run.sh (to give the script the needed permissions)
+- ./run.sh (to run the script)
+
+For more specific testing:
+
+1. Enter the following Command to manually build solutions:
 - make
 
-2. Enter the following Command to execute:
+2. Enter the following Commands to execute a specific solution:
+    MapReduce:
 - out/MapReduce
-
-3. Enter the following Command to rerun the tests:
+    automatic Tests:
 - out/Test
+
+3. To reduce the program to only its necessary files:
+- make clean
+
+
+
 
 And then you should be good to go!
 

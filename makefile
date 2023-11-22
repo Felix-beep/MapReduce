@@ -5,6 +5,7 @@ all: MapReduce Tests
 
 .outputFolder:
 	mkdir -p out
+	mkdir -p ResultFolder
 	
 MapReduce: .outputFolder
 	$(CC) $(CFLAGS) MapReduce.cpp -o out/MapReduce 
@@ -15,3 +16,4 @@ Tests: .outputFolder
 
 clean:
 	rm -rf out
+	rm -rf ResultFolder
