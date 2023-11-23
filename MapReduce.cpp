@@ -21,11 +21,6 @@ int main(int argc, char** argv)
     vector<bool> ChapterThemesSolution = MapFromSolutions(SolutionLines);
 
     vector<ChapterEvaluation> ChapterThemes;
-
-    /*int ChapterNumber = 9;
-    auto AnalyzedChapter = EvaluateChapter(WordView[ChapterNumber], PeaceMapping, WarMapping);
-    WriteAnalyzedChapter(AnalyzedChapter, ChapterNumber, true);*/
-    
     
     ChapterThemes = EvaluateAllChapters(WordView, PeaceMapping, WarMapping);
 

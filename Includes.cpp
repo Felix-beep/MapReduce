@@ -23,7 +23,7 @@ using Book = std::vector<std::vector<std::string>>;
 
 struct ChapterEvaluation {
     int chapterIndex;
-    const Chapter& chapter;
+    const std::vector<std::string>& chapter;
     const std::vector<int> peaceTerms;
     const std::vector<int> warTerms;
     const bool isWarChapter;

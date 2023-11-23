@@ -2,6 +2,11 @@
 
 using namespace std;
 
+
+auto for_each_collection = [](auto Vector, auto fn){
+    return for_each(Vector.begin(), Vector.end(), fn);
+};
+
 // boolean lambdas
 
 auto IsIn = [](const vector<int>& numbers, int lookingfor) -> bool {
@@ -24,7 +29,7 @@ auto ThemesToString = [](const vector<ChapterEvaluation>& Themes) -> string {
     stringstream outputString;
     //ofstream outputFile("./TextFolder/Results.txt");
     int counter = 1;
-    for_each(Themes.begin(), Themes.end(), [&](ChapterEvaluation Evaluation){
+    for_each_collection(Themes, [&](ChapterEvaluation Evaluation){
         outputString << "Chapter " << counter << ": " << ((Evaluation.isWarChapter)? "war-related" : "peace-related") << endl;
         ++counter;
     });
@@ -36,34 +41,21 @@ auto AnalysationToString = [](const ChapterEvaluation EvaluatedChapter, bool pri
     stringstream outputString;
 
     outputString << "Evaluation for Chapter " << EvaluatedChapter.chapterIndex << ":" << endl ;
-    int wordcount = 1;
 
     if(printText){
-        auto printWord = [&](Word word){
-            if(IsIn(EvaluatedChapter.peaceTerms, wordcount)) outputString << "(" << word << ") ";
-            else if(IsIn(EvaluatedChapter.warTerms, wordcount)) outputString << "<" << word << "> ";
-            else outputString << word << " ";
-            wordcount++;
-        };
 
-        auto printLine = [&](Line line){
-            outputString << " - ";
-            for_each(line.begin(), line.end(), printWord);
-            outputString << endl;
+        auto printLine = [&](string line){
+            outputString << line << endl;
         };
 
         outputString << endl;
-        for_each(EvaluatedChapter.chapter.begin(), EvaluatedChapter.chapter.end(), printLine );
+        for_each_collection(EvaluatedChapter.chapter, printLine );
         outputString << endl;
     }
 
     
     outputString << "Found " << EvaluatedChapter.peaceTerms.size() << " peace terms";
     outputString << " and " << EvaluatedChapter.warTerms.size() << " war terms." << endl;
-    outputString << "At ";
-    //for_each(EvaluatedChapter.peaceTerms.begin(), EvaluatedChapter.peaceTerms.end(), [&](int pos){ outputString << pos << " "; });
-    // outputString << " and ";
-    //for_each(EvaluatedChapter.warTerms.begin(), EvaluatedChapter.warTerms.end(), [&](int pos){ outputString << pos << " "; });
     
     outputString << "It was declared a " << ((EvaluatedChapter.isWarChapter) ? "war-related" : "peace-related") << " Chapter" << endl << endl;
     return outputString.str();
@@ -71,7 +63,7 @@ auto AnalysationToString = [](const ChapterEvaluation EvaluatedChapter, bool pri
 
 auto BookAnalysationToString = [](const vector<ChapterEvaluation>& EvaluatedChapter, bool printText = false) -> string {
     string results;
-    for_each(EvaluatedChapter.begin(), EvaluatedChapter.end(), [&](const ChapterEvaluation& Chapter){
+    for_each_collection(EvaluatedChapter, [&](const ChapterEvaluation& Chapter){
         string result = AnalysationToString(Chapter, printText);
         results.append(result);
     });
@@ -85,7 +77,7 @@ auto SplitStringIntoWords = [](string WordLine) -> Line {
 
     string currentWord = string();
 
-    for_each(WordLine.begin(), WordLine.end(), [&](char letter){
+    for_each_collection(WordLine, [&](char letter){
         if(letter == '\'' || IsALetter(letter)){
             currentWord.push_back(letter);
         }
@@ -100,20 +92,12 @@ auto SplitStringIntoWords = [](string WordLine) -> Line {
     return Words;
 };
 
-auto SplitChapterIntoWords = [](const vector<string>& InputChapter) -> Chapter {
-    Chapter SplitChapter;
-    for_each(InputChapter.begin(), InputChapter.end(), [&](string Line){
-        SplitChapter.push_back(SplitStringIntoWords(Line));
-    });
-    return SplitChapter;
-};
-
 // Mapping
 
 auto MapFromSolutions = [](const vector<string>& lines) -> vector<bool> {
     vector<bool> ChapterThemes;
 
-    for_each(lines.begin(), lines.end(), [&](string line){
+    for_each_collection(lines, [&](string line){
         if(line.find("peace") != string::npos) ChapterThemes.push_back(false);
         if(line.find("war") != string::npos) ChapterThemes.push_back(true);
     });
@@ -123,9 +107,9 @@ auto MapFromSolutions = [](const vector<string>& lines) -> vector<bool> {
 
 auto MapVector = [](const vector<string> Vector) -> map<string, int> {
     map<string, int> Mapping;
-    for(string Word : Vector){
+    for_each_collection(Vector, [&](string Word){
         Mapping[Word]++;
-    }
+    });
     return Mapping;
 };
 
@@ -137,30 +121,31 @@ auto Filter = [](const string& Word, const map<string, int>& PeaceTerms, const m
     return nullopt;
 };
 
-auto FilterChapter = [](const Chapter& Chapter, const map<string, int>& PeaceTerms, const map<string, int>& WarTerms ) -> pair<vector<int>, vector<int>> {
-    vector<int> PeaceDistances = { };
-    vector<int> WarDistances = { };
+auto FilterChapter = [](const vector<string>& Chapter, const map<string, int>& PeaceTerms, const map<string, int>& WarTerms ) -> pair<vector<int>, vector<int>> {
+    vector<int> FoundPeaceTerms = { };
+    vector<int> FoundWarTerms = { };
     int iterator = 1;
 
     auto evaluateWord = [&](Word word){
         optional<int> Result = Filter(word, PeaceTerms, WarTerms);
         if(Result.has_value()){
             if(*Result){
-                WarDistances.push_back(iterator);
+                FoundWarTerms.push_back(iterator);
             } else {
-                PeaceDistances.push_back(iterator);
+                FoundPeaceTerms.push_back(iterator);
             }
         }
         iterator++;
     };
 
-    auto evaluateLine = [&](Line line){
-        for_each(line.begin(), line.end(), evaluateWord);
+    auto evaluateLine = [&](string line){
+        Line Words = SplitStringIntoWords(line);
+        for_each_collection(Words, evaluateWord);
     };
 
-    for_each(Chapter.begin(), Chapter.end(), evaluateLine);    
+    for_each_collection(Chapter, evaluateLine);    
     
-    return make_pair(PeaceDistances, WarDistances);
+    return make_pair(FoundPeaceTerms, FoundWarTerms);
 };
 
 // Sorting
@@ -170,7 +155,7 @@ auto sortEvaluations = [](const vector<ChapterEvaluation>& Vector){
     vector<pair<int, int>> ChapterIndexPair;
 
     int iter = 0;
-    for_each(Vector.begin(), Vector.end(), [&](ChapterEvaluation Eval){ 
+    for_each_collection(Vector, [&](ChapterEvaluation Eval){ 
         ChapterIndexPair.push_back(make_pair(Eval.chapterIndex, iter++));
     });
 
@@ -187,8 +172,7 @@ auto sortEvaluations = [](const vector<ChapterEvaluation>& Vector){
 
 // Evaluation
 
-auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMapping, const map<string, int> WarMapping) -> ChapterEvaluation {
-    
+auto EvaluateChapter = [](const vector<string>& Chapter, const map<string, int> PeaceMapping, const map<string, int> WarMapping) -> ChapterEvaluation {
     auto PairVectors = FilterChapter(Chapter, PeaceMapping, WarMapping);
 
     int PeaceDistance = avrgDistance(PairVectors.first);
@@ -208,25 +192,34 @@ auto EvaluateChapter = [](const Chapter& Chapter, const map<string, int> PeaceMa
 auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMapping, const map<string, int>& WarMapping ) -> vector<ChapterEvaluation> {
     mutex mtx;
     vector<ChapterEvaluation> EvaluatedChapters;
-    auto BookView = Book | std::views::all | std::views::drop(1);
+
+    // remove the prelude before the first chapter starts
+    auto bookView = Book | std::views::all | std::views::drop(1);
     int i = 0;
 
+    // vector of all threads
     vector<thread> activethreads = {};
 
-    ranges::for_each(BookView.begin(), BookView.end(), [&](const vector<string>& chapter){
-        int Threadnumber = ++i;
-        activethreads.emplace_back([&EvaluatedChapters, &mtx, &chapter, &PeaceMapping, &WarMapping, Threadnumber]() {
-            ChapterEvaluation result = EvaluateChapter(SplitChapterIntoWords(chapter), PeaceMapping, WarMapping);
-            result.chapterIndex = Threadnumber;
+    for_each_collection(bookView, [&](const vector<string>& chapter){
+        int threadnumber = ++i;
+        // add a thread for each chapter 
+        activethreads.emplace_back([&EvaluatedChapters, &mtx, &chapter, &PeaceMapping, &WarMapping, threadnumber]() {
+            // Evaluate
+            ChapterEvaluation result = EvaluateChapter(chapter, PeaceMapping, WarMapping);
+
+            // add index and safe the result
+            result.chapterIndex = threadnumber;
             lock_guard<mutex> lock(mtx);
             EvaluatedChapters.emplace_back(result);
         });
     });
 
+    // wait for all to finish
     for (auto& thread : activethreads) {
         thread.join();
     }
 
+    // sort it
     vector<ChapterEvaluation> EvaluatedChaptersSorted = sortEvaluations(EvaluatedChapters);
 
     return EvaluatedChaptersSorted;

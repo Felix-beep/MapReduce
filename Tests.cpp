@@ -116,7 +116,7 @@ TEST_CASE("Filter"){
 // FilterChapter
 
 TEST_CASE("FilterChapter"){
-    Chapter String { {"A", "quick"}, {"quick", "very", "brown", "fox"} };
+    vector<string> String { "A", "quick", "quick", "very", "brown", "fox" };
 
     Line Terms1 { "A", "very" };
     map<string, int> Map1 = MapVector(Terms1);
@@ -130,7 +130,7 @@ TEST_CASE("FilterChapter"){
 }
 
 TEST_CASE("FilterEmptyChapter"){
-    Chapter String { { } };
+    vector<string> String {  };
 
     Line Terms1 { "A", "very" };
     map<string, int> Map1 = MapVector(Terms1);

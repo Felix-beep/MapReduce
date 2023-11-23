@@ -62,8 +62,6 @@ auto ReadBookFromFile = [](const string& filename) -> vector<vector<string>> {
         }
 
         if( !bookHasStarted && line.compare(0, 25, "*** START OF THE PROJECT ") == 0){
-            cout << line << endl;
-            cout << "book has started" << endl;
             bookHasStarted = true;
             continue;
         }
