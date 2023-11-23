@@ -21,6 +21,8 @@ auto IsALetter = [](const char letter) -> bool {
 
 auto avrgDistance = [](const vector<int>& Vector) -> double {
     return (Vector.size() == 0) ? 0 : Vector.size();
+
+    
 };
 
 // String Creators
