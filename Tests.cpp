@@ -29,12 +29,48 @@ TEST_CASE("IsALetter"){
 
 TEST_CASE("avrgDistance"){
     vector<int> NoNumbers = { };
-    vector<int> Numbers = { 13, 23, 25, 93 };
-    vector<int> NumbersTwo = { 14, 23, 25, 193, 23 };
+    vector<int> Numbers = { 0, 13, 23, 25, 93, 200 };
 
-    CHECK(avrgDistance(NoNumbers) < avrgDistance(Numbers));
-    CHECK(avrgDistance(Numbers) < avrgDistance(NumbersTwo));
-    CHECK(avrgDistance(Numbers) == avrgDistance(Numbers));
+    CHECK(AvrgDistance(NoNumbers) > AvrgDistance(Numbers));
+    CHECK(AvrgDistance(Numbers) == AvrgDistance(Numbers));
+
+    vector<int> NumbersTwo = { 0, 14, 23, 25, 193, 200 };
+
+    CHECK(AvrgDistance(Numbers) < AvrgDistance(NumbersTwo));
+
+    vector<int> OneNumber = { 0, 50, 200 };
+
+    CHECK(AvrgDistance(OneNumber) > AvrgDistance(Numbers));
+    CHECK(AvrgDistance(OneNumber) > AvrgDistance(NumbersTwo));
+
+    vector<int> NumbersThree = { 0, 13, 23, 25, 94, 200 };
+
+    CHECK(AvrgDistance(Numbers) == AvrgDistance(NumbersThree));
+}
+
+// avrgDistanceBounded
+
+TEST_CASE("avrgDistanceBounded"){
+    vector<int> OneNumber = { 0, 4, 200 };
+    vector<int> Numbers = { 0, 13, 23, 25, 93, 200 };
+    vector<int> NumbersTwo = { 0, 14, 23, 25, 193, 200 };
+
+    CHECK(AvrgDistanceBounded(OneNumber) > AvrgDistanceBounded(Numbers));
+    CHECK(AvrgDistanceBounded(Numbers) == AvrgDistanceBounded(NumbersTwo));
+    CHECK(AvrgDistanceBounded(Numbers) == AvrgDistanceBounded(Numbers));
+}
+
+// Density
+
+TEST_CASE("density"){
+    vector<int> OneNumber = { 0, 4, 200 };
+    vector<int> Numbers = { 0, 13, 23, 25, 93, 200 };
+    vector<int> NumbersTwo = { 0, 14, 23, 25, 193, 200 };
+
+    CHECK(Density(OneNumber) < Density(Numbers));
+    CHECK(Density(Numbers) == Density(Numbers));
+    CHECK(Density(Numbers) == Density(NumbersTwo));
+
 }
 
 // ThemesToString
@@ -57,8 +93,6 @@ TEST_CASE("SplitStringIntoWords"){
     CHECK(Vector[0] != "B");
     CHECK(Vector[1] != "A");
 }
-
-// SplitChapterIntoWords
 
 // MapFromSolutions
 
@@ -125,8 +159,8 @@ TEST_CASE("FilterChapter"){
     map<string, int> Map2 = MapVector(Terms2);
 
     pair<vector<int>, vector<int>> Results = FilterChapter(String, Map1, Map2);
-    CHECK(Results.first.size() == 2);
-    CHECK(Results.second.size() == 3);
+    CHECK(Results.first.size() == 4);
+    CHECK(Results.second.size() == 5);
 }
 
 TEST_CASE("FilterEmptyChapter"){
@@ -139,8 +173,8 @@ TEST_CASE("FilterEmptyChapter"){
     map<string, int> Map2 = MapVector(Terms2);
 
     pair<vector<int>, vector<int>> Results = FilterChapter(String, Map1, Map2);
-    CHECK(Results.first.size() == 0);
-    CHECK(Results.second.size() == 0);
+    CHECK(Results.first.size() == 2);
+    CHECK(Results.second.size() == 2);
 }
 
 // sortEvaluations

@@ -19,17 +19,51 @@ auto IsALetter = [](const char letter) -> bool {
 
 // calculations
 
-auto avrgDistance = [](const vector<int>& Vector) -> double {
-    return (Vector.size() == 0) ? 0 : Vector.size();
+auto AvrgDistance = [](const vector<int>& Vector) -> double {
 
-    
+    if(Vector.size() <= 2) return double(1000);
+
+    auto start = Vector.begin() + 1;
+    auto end = Vector.end() - 1;
+
+    int sum = 0;
+    int last = 0;
+
+    for_each(start, end, [&](int num){
+        sum += num - last;
+        last = num;
+    });
+    return sum / (Vector.size() - 2);
+};
+
+auto AvrgDistanceBounded = [](const vector<int>& Vector) -> double {
+
+    if(Vector.size() <= 0) return double(1000);
+
+    int sum = 0;
+    int last = 0;
+
+    for_each_collection(Vector, [&](int num){
+        sum += num - last;
+        last = num;
+    });
+
+    return sum / Vector.size();
+};
+
+auto Density = [](const vector<int>& Vector) -> double {
+    /*double base = 2;
+
+    if(Vector.size() == 0) return base;
+    return 1 / int(Vector.size());*/
+
+    return Vector.size();
 };
 
 // String Creators
 
 auto ThemesToString = [](const vector<ChapterEvaluation>& Themes) -> string {
     stringstream outputString;
-    //ofstream outputFile("./TextFolder/Results.txt");
     int counter = 1;
     for_each_collection(Themes, [&](ChapterEvaluation Evaluation){
         outputString << "Chapter " << counter << ": " << ((Evaluation.isWarChapter)? "war-related" : "peace-related") << endl;
@@ -70,6 +104,20 @@ auto BookAnalysationToString = [](const vector<ChapterEvaluation>& EvaluatedChap
         results.append(result);
     });
     return results;
+};
+
+auto DifferencesToString = [](vector<bool>& ChapterThemesSolution, vector<ChapterEvaluation>& ChapterThemes){
+    stringstream outputString;
+    int differences = 0;
+    for(int i = 0; i <= (int)ChapterThemesSolution.size() && i <= (int)ChapterThemes.size(); i++){
+        if(ChapterThemesSolution[i] != ChapterThemes[i].isWarChapter){
+            differences++;
+        }
+    }
+    outputString << "Number of differences: " << differences << endl;
+    outputString << "with an accuracy of: " << ChapterThemesSolution.size() - differences << "/" << ChapterThemesSolution.size() << endl;
+
+    return outputString.str();
 };
 
 // String reformers
@@ -124,8 +172,8 @@ auto Filter = [](const string& Word, const map<string, int>& PeaceTerms, const m
 };
 
 auto FilterChapter = [](const vector<string>& Chapter, const map<string, int>& PeaceTerms, const map<string, int>& WarTerms ) -> pair<vector<int>, vector<int>> {
-    vector<int> FoundPeaceTerms = { };
-    vector<int> FoundWarTerms = { };
+    vector<int> FoundPeaceTerms = { 0 };
+    vector<int> FoundWarTerms = { 0 };
     int iterator = 1;
 
     auto evaluateWord = [&](Word word){
@@ -145,7 +193,10 @@ auto FilterChapter = [](const vector<string>& Chapter, const map<string, int>& P
         for_each_collection(Words, evaluateWord);
     };
 
-    for_each_collection(Chapter, evaluateLine);    
+    for_each_collection(Chapter, evaluateLine);   
+
+    FoundPeaceTerms.push_back(iterator); 
+    FoundWarTerms.push_back(iterator);
     
     return make_pair(FoundPeaceTerms, FoundWarTerms);
 };
@@ -177,9 +228,9 @@ auto sortEvaluations = [](const vector<ChapterEvaluation>& Vector){
 auto EvaluateChapter = [](const vector<string>& Chapter, const map<string, int> PeaceMapping, const map<string, int> WarMapping) -> ChapterEvaluation {
     auto PairVectors = FilterChapter(Chapter, PeaceMapping, WarMapping);
 
-    int PeaceDistance = avrgDistance(PairVectors.first);
-    int WarDistance = avrgDistance(PairVectors.second);
-    bool isWarChapter = WarDistance > PeaceDistance;
+    int PeaceDistance = AvrgDistance(PairVectors.first);
+    int WarDistance = AvrgDistance(PairVectors.second);
+    bool isWarChapter = WarDistance < PeaceDistance;
 
     ChapterEvaluation Result{
         0,

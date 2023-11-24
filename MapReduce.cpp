@@ -34,13 +34,9 @@ int main(int argc, char** argv)
     string ThemeResults = ThemesToString(ChapterThemes);
     PrintText(ThemeResults, "Results.txt");
 
-    int differences = 0;
-    for(int i = 0; i <= (int)ChapterThemesSolution.size() && i <= (int)ChapterThemes.size(); i++){
-        if(ChapterThemesSolution[i] != ChapterThemes[i].isWarChapter){
-            differences++;
-        }
-    }
-    cout << differences << endl;
+    string DifferenceResults = DifferencesToString(ChapterThemesSolution, ChapterThemes);
+    PrintText(DifferenceResults, "Accuracy.txt");
+    
     
     return 0;
 }
