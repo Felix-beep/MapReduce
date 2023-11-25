@@ -26,8 +26,8 @@ auto AvrgDistance = [](const vector<int>& Vector) -> double {
     auto start = Vector.begin() + 1;
     auto end = Vector.end() - 1;
 
-    int sum = 0;
-    int last = 0;
+    int sum = *start;
+    int last = *start;
 
     for_each(start, end, [&](int num){
         sum += num - last;
@@ -52,11 +52,6 @@ auto AvrgDistanceBounded = [](const vector<int>& Vector) -> double {
 };
 
 auto Density = [](const vector<int>& Vector) -> double {
-    /*double base = 2;
-
-    if(Vector.size() == 0) return base;
-    return 1 / int(Vector.size());*/
-
     return Vector.size();
 };
 
@@ -228,9 +223,9 @@ auto sortEvaluations = [](const vector<ChapterEvaluation>& Vector){
 auto EvaluateChapter = [](const vector<string>& Chapter, const map<string, int> PeaceMapping, const map<string, int> WarMapping) -> ChapterEvaluation {
     auto PairVectors = FilterChapter(Chapter, PeaceMapping, WarMapping);
 
-    int PeaceDistance = AvrgDistance(PairVectors.first);
-    int WarDistance = AvrgDistance(PairVectors.second);
-    bool isWarChapter = WarDistance < PeaceDistance;
+    int PeaceDistance = Density(PairVectors.first);
+    int WarDistance = Density(PairVectors.second);
+    bool isWarChapter = WarDistance > PeaceDistance;
 
     ChapterEvaluation Result{
         0,

@@ -28,7 +28,7 @@ int main(int argc, char** argv)
     std::chrono::duration<double> duration = end - start;
     PrintText("Program took " + std::to_string(duration.count()) + " seconds", "TimeResult.txt");
 
-    string AnalysationResults = BookAnalysationToString(ChapterThemes, false);
+    string AnalysationResults = BookAnalysationToString(ChapterThemes, true);
     PrintText(AnalysationResults, "AnalysationResults.txt");
 
     string ThemeResults = ThemesToString(ChapterThemes);
