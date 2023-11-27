@@ -236,39 +236,3 @@ auto EvaluateChapter = [](const vector<string>& Chapter, const map<string, int> 
     };
     return Result;
 };
-
-auto EvaluateAllChapters = [](const Book& Book, const map<string, int>& PeaceMapping, const map<string, int>& WarMapping ) -> vector<ChapterEvaluation> {
-    mutex mtx;
-    vector<ChapterEvaluation> EvaluatedChapters;
-
-    // remove the prelude before the first chapter starts
-    auto bookView = Book | std::views::all | std::views::drop(1);
-    int i = 0;
-
-    // vector of all threads
-    vector<thread> activethreads = {};
-
-    for_each_collection(bookView, [&](const vector<string>& chapter){
-        int threadnumber = ++i;
-        // add a thread for each chapter 
-        activethreads.emplace_back([&EvaluatedChapters, &mtx, &chapter, &PeaceMapping, &WarMapping, threadnumber]() {
-            // Evaluate
-            ChapterEvaluation result = EvaluateChapter(chapter, PeaceMapping, WarMapping);
-
-            // add index and safe the result
-            result.chapterIndex = threadnumber;
-            lock_guard<mutex> lock(mtx);
-            EvaluatedChapters.emplace_back(result);
-        });
-    });
-
-    // wait for all to finish
-    for (auto& thread : activethreads) {
-        thread.join();
-    }
-
-    // sort it
-    vector<ChapterEvaluation> EvaluatedChaptersSorted = sortEvaluations(EvaluatedChapters);
-
-    return EvaluatedChaptersSorted;
-};

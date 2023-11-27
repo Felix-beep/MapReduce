@@ -1,5 +1,5 @@
 CC = g++ -std=c++20 -lstdc++
-CFLAGS = -Wall -Wextra -Wno-unused-parameter -Werror 
+CFLAGS = -Wall -Wextra -Wno-unused-parameter -Werror -O3
 
 all: MapReduce Tests
 
