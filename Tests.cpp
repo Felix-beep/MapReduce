@@ -45,7 +45,17 @@ TEST_CASE("avrgDistance"){
 
     vector<int> NumbersThree = { 0, 13, 23, 25, 94, 200 };
 
-    CHECK(AvrgDistance(Numbers) == AvrgDistance(NumbersThree));
+    CHECK(AvrgDistance(Numbers) < AvrgDistance(NumbersThree));
+}
+
+TEST_CASE("avrgDistanceValue"){
+    vector<int> Numbers = { 0, 100, 200, 365 };
+
+    CHECK(AvrgDistance(Numbers) == 100);
+
+    vector<int> NumbersTwo = { 0, 100, 200, 300};
+
+    CHECK(AvrgDistanceBounded(NumbersTwo) == 100);
 }
 
 // avrgDistanceBounded

@@ -21,24 +21,24 @@ auto IsALetter = [](const char letter) -> bool {
 
 auto AvrgDistance = [](const vector<int>& Vector) -> double {
 
-    if(Vector.size() <= 2) return double(1000);
+    if(Vector.size() <= 3) return double(1000);
 
     auto start = Vector.begin() + 1;
     auto end = Vector.end() - 1;
 
-    int sum = *start;
+    int sum = 0;
     int last = *start;
 
     for_each(start, end, [&](int num){
         sum += num - last;
         last = num;
     });
-    return sum / (Vector.size() - 2);
+    return sum / (Vector.size() - 3);
 };
 
 auto AvrgDistanceBounded = [](const vector<int>& Vector) -> double {
 
-    if(Vector.size() <= 0) return double(1000);
+    if(Vector.size() <= 1) return double(1000);
 
     int sum = 0;
     int last = 0;
@@ -48,7 +48,7 @@ auto AvrgDistanceBounded = [](const vector<int>& Vector) -> double {
         last = num;
     });
 
-    return sum / Vector.size();
+    return sum / (Vector.size() - 1);
 };
 
 auto Density = [](const vector<int>& Vector) -> double {
